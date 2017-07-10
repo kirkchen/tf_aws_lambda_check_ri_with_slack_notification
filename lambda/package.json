@@ -1,0 +1,11 @@
+{
+  "name": "tf_aws_lambda_check_ri_with_slack_notification_lambda",
+  "version": "0.0.1",
+  "description": "Check is there any resource not included in active reserved instances and send notification to slack.",
+  "main": "index.js",
+  "author": "Kirk Chen <rwk0119@yahoo.com.tw>",
+  "license": "MIT",
+  "dependencies": {
+    "aws_reserved_instance_checker": "^0.2.1"
+  }
+}
