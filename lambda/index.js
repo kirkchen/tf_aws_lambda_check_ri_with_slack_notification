@@ -1,13 +1,18 @@
-var aws_reserved_instance_checker = require('aws_reserved_instance_checker');
+var aws_reserved_instance_checker = require('aws_reserved_instance_checker').default;
 
 exports.handler = function (event, context, callback) {
     try {
 
-        aws_reserved_instance_checker();
-
-        context.succeed()
+        aws_reserved_instance_checker()
+            .then(
+                function () {
+                    context.succeed()
+                },
+                function (err) {
+                    context.fail(err);
+                });
     }
     catch (err) {
-        context.fail(JSON.stringify(err));
+        context.fail(err);
     }
 };
