@@ -15,8 +15,9 @@ resource "aws_lambda_function" "lambda" {
 
   environment {
     variables = {
-      RICHECKER_WEBHOOK_URL = "${var.webhook_url}"
-      RICHECKER_REGION      = "${var.region}"
+      RICHECKER_WEBHOOK_URL   = "${var.webhook_url}"
+      RICHECKER_REGION        = "${var.region}"
+      RICHECKER_SLACK_CHANNEL = "${var.slack_channel}"
     }
   }
 }

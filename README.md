@@ -9,6 +9,7 @@ Module Input Variables
 - `lambda_name` - Unique name for Lambda function
 - `schedule_expression` - a [valid rate or cron expression](http://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
 - `webhook_url` - url for sending check result to slack.
+- `slack_channel` - channel for sending check result to slack.
 - `region` - (optional) the region which wants to check reserved instances status.
 - `timeout` - (optional) the amount of time your Lambda Function has to run in seconds. Defaults to 30. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
 
