@@ -25,6 +25,10 @@ data "aws_iam_policy_document" "describe_ec2" {
     actions = [
       "ec2:DescribeReservedInstances",
       "ec2:DescribeInstances",
+      "rds:DescribeReservedDBInstances",
+      "rds:DescribeDBInstances",
+      "elasticache:DescribeReservedCacheNodes",
+      "elasticache:DescribeCacheClusters"
     ]
 
     resources = [
