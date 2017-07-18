@@ -28,7 +28,10 @@ data "aws_iam_policy_document" "describe_ec2" {
       "rds:DescribeReservedDBInstances",
       "rds:DescribeDBInstances",
       "elasticache:DescribeReservedCacheNodes",
-      "elasticache:DescribeCacheClusters"
+      "elasticache:DescribeCacheClusters",
+      "logs:CreateLogGroup",
+      "logs:CreateLogStream",
+      "logs:PutLogEvents"
     ]
 
     resources = [
