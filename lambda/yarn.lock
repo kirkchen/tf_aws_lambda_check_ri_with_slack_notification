@@ -79,9 +79,9 @@ aws4@^1.2.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
-aws_reserved_instance_checker@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/aws_reserved_instance_checker/-/aws_reserved_instance_checker-0.3.0.tgz#59a1a1094cc3ca916ff70bd9b5a292df3e8dacce"
+aws_reserved_instance_checker@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/aws_reserved_instance_checker/-/aws_reserved_instance_checker-0.3.1.tgz#12a0e9e6712094f1d58bfb34c90a09418908f26e"
   dependencies:
     "@slack/client" "^3.10.0"
     aws-sdk "^2.80.0"

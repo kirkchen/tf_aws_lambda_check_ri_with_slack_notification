@@ -6,6 +6,6 @@
   "author": "Kirk Chen <rwk0119@yahoo.com.tw>",
   "license": "MIT",
   "dependencies": {
-    "aws_reserved_instance_checker": "^0.3.0"
+    "aws_reserved_instance_checker": "^0.3.1"
   }
 }
