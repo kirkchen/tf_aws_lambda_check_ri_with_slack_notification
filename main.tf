@@ -18,6 +18,7 @@ resource "aws_lambda_function" "lambda" {
       RICHECKER_WEBHOOK_URL   = "${var.webhook_url}"
       RICHECKER_REGION        = "${var.region}"
       RICHECKER_SLACK_CHANNEL = "${var.slack_channel}"
+      RICHECKER_EXCLUDE_PATTERN = "${var.exclude_pattern}"
     }
   }
 }

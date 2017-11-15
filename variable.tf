@@ -14,3 +14,5 @@ variable "slack_channel" {
 variable "region" {
   default = "us-east-1"
 }
+
+variable "exclude_pattern" {}
