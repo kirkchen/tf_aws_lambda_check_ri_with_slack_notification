@@ -15,4 +15,6 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable "exclude_pattern" {}
+variable "exclude_pattern" {
+  default = ""
+}

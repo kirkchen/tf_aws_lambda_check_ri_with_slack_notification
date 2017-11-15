@@ -12,6 +12,7 @@ Module Input Variables
 - `slack_channel` - channel for sending check result to slack.
 - `region` - (optional) the region which wants to check reserved instances status.
 - `timeout` - (optional) the amount of time your Lambda Function has to run in seconds. Defaults to 30. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
+- `exclude_pattern` - (optional) exclude instance with name which matches this pattern
 
 Usage 
 -----
@@ -21,7 +22,8 @@ module "lambda_scheduled" {
   source              = "github.com/kirkchen/tf_aws_lambda_check_ri_with_slack_notification"
   lambda_name         = "lambda_reserved_instance_checker"
   schedule_expression = "cron(0 6 * ? 3 *)"
-  webhook_url = "your_slack_webhook_url"
+  webhook_url         = "your_slack_webhook_url"
+  exclude_pattern     = "(instance_a|instance_b)"
 }
 ```
 
